@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------- HEADER --------------------------------- */
+
+header {
+    background-image: url(img/imagem.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+#nav button:focus,
+#nav button:hover {
+    color: #fff;
+}
+
+#nav button:focus:after,
+#nav button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+#nav button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 44px);
+}
+
+#titulo h3 {
+    font-size: 40px;
+}
+
+
+#titulo button {
+    border: none;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px rgb(211, 211, 211);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+#titulo button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px rgb(227, 227, 227);
+}
+
+
+/* ------------------------------------- HEADER --------------------------------- */
+
+
+.card-danca {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img {
+    background-image: url(img/breaking_breakdance_jogos_de_paris.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid black;
+}
+
+.textos {
+    padding: 15px;
+    text-align: center;
+}
