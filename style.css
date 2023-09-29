@@ -241,3 +241,11 @@ button:active .button_top {
     padding: 15px;
     text-align: center;
 }
+
+#videos{
+    transition: 0.5s ease-in;
+}
+
+#videos:hover{
+    transform: scale(1.3);
+}
