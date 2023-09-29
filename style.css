@@ -135,7 +135,11 @@ header h3 {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    transition: 0.8s ease-in;
+}
 
+.card-danca:hover {
+    transform: scale(1.2);
 }
 
 .img {
@@ -217,7 +221,11 @@ button:active .button_top {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    transition: 0.8s ease-in;
+}
 
+.card-danca2:hover {
+    transform: scale(1.2);
 }
 
 .img2 {
