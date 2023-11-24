@@ -87,10 +87,17 @@ header h3 {
     align-items: center;
     flex-direction: column;
     height: calc(100vh - 44px);
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
 }
 
 #titulo h3 {
     font-size: 40px;
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
+
 }
 
 
@@ -135,11 +142,17 @@ header h3 {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    transition: 0.8s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .card-danca:hover {
-    transform: scale(1.2);
+    transform: scale(1.090);
+}
+
+
+.card-danca-baixo{
+    height: 100%;
+    animation-duration: 1s;
 }
 
 .img {
@@ -207,6 +220,18 @@ button:active .button_top {
 }
 
 
+.gif{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
+    height: 100%;
+}
+
+.escrita{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-direita;
+}
 
 .card-danca2 {
     background-color: white;
@@ -221,11 +246,11 @@ button:active .button_top {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    transition: 0.8s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .card-danca2:hover {
-    transform: scale(1.2);
+    transform: scale(1.080);
 }
 
 .img2 {
@@ -243,9 +268,53 @@ button:active .button_top {
 }
 
 #videos{
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
 
 #videos:hover{
-    transform: scale(1.3);
+    transform: scale(1.080);
 }
+
+
+/* ------------------------------------- KEY FRAMES ------------------------------------- */
+
+@keyframes entrada-esquerda{
+    0%{
+        right: 500px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+@keyframes entrada-direita{
+    0%{
+        left: 500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+
+@keyframes entrada-cima{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
+
+@keyframes entrada-baixo{
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0%;
+    }
+}
+
+

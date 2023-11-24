@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/951317_114-removebg-preview.png">
     <style>
         p {
             padding: 0px;
@@ -36,9 +37,11 @@
             <p style="font-size: 20px;">
                 CONHEÇA NOSSA ESCOLA
             </p>
-            <button id="btn-banner">
-                <p>SAIBA MAIS!</p>
-            </button>
+            <a href="#video">
+                <button id="btn-banner">
+                    <p>SAIBA MAIS!</p>
+                </button>
+            </a>
         </div>
     </header>
     <main class="container-fluid">
@@ -77,8 +80,8 @@
             </div>
         </div>
         <div class="row" id="estilos-div2" style="padding: 20px; display: none;">
-            <div class="col-md-4">
-                <div class="card-danca">
+            <div class="col-md-4 ">
+                <div class="card-danca card-danca-baixo">
                     <div class="img"
                         style="background-image: url(img/depositphotos_107715382_xl-2015-e1576700494597.webp);"></div>
                     <div class="textos">
@@ -88,8 +91,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card-danca">
+            <div class="col-md-4 ">
+                <div class="card-danca card-danca-baixo">
                     <div class="img" style="background-image: url(img/p1280x1280_e5839055.jpg);"></div>
                     <div class="textos">
                         <h4>Valsa</h4>
@@ -100,7 +103,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card-danca">
+                <div class="card-danca card-danca-baixo">
                     <div class="img" style="background-image: url(img/SAPATEADO-CIA-DAS-ARTES.jpg);"></div>
                     <div class="textos">
                         <h4>Sapateado</h4>
@@ -122,11 +125,12 @@
             <p>VENHA CONHECER</p>
         </div>
         <div class="row" style="background-color: #14213D; color: white; padding: 25px;">
-            <div class="col-md-6 col-sm-12"
-                style="border: 2px solid white; padding: 0px; border-radius: 90px; height: 100%;">
-                <img src="img/powerhouse-dance2-900x600-1.jpg" alt="" style="border-radius: 90px;" />
+            <div class="col-md-6 col-sm-12 gif"
+                style="border: 6px solid black; padding: 0px; border-radius: 90px; height: 100%;">
+                <img src="img/PatoDança.gif" alt="" style="border-radius: 87px; width: 100%;
+                height: 350px;" />
             </div>
-            <div class="col-md-6 col-sm-12 " style=" text-align: center; padding: 40px;">
+            <div class="col-md-6 col-sm-12 escrita " style=" text-align: center; padding: 40px;">
                 <h2 style="font-size: 40px;">PRIMEIRA AULA GRATIS!!</h2>
                 <p
                     style="font-size: 20px; align-items: center; display: flex; justify-content: center; text-align: center;">
@@ -177,7 +181,7 @@
         <div class="row" style="background-color: #14213D; color: white; text-align: center; font-size: 30px; padding: 20px;">
             <p>CORTES DAS AULAS</p>
         </div>
-        <div class="row" style="background-color: #14213D; padding: 10px;">
+        <div class="row" id="video" style="background-color: #14213D; padding: 10px;">
             <div class="col">
                 <div class="row">
                     <div class="col-md-6" id="videos"><iframe width="100%" height="300" src="https://www.youtube.com/embed/mzfOAuuraKU?si=BocTfuxDr07bHf2T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
